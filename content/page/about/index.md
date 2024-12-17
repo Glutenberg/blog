@@ -24,10 +24,9 @@ menu:
 # About
 I'm Josh, a mechanical design engineer with 7+ years of experience in industrial automation and machine building. I graduated from the [University of Guelph](https://www.uoguelph.ca/) with a Bachelor of Engineering in 2018, and recieved my Professional Engineering License from [PEO](https://www.peo.on.ca/) in early 2024.
 
-<!-- ## The Focus
-This blog will primary focus on the following topics: 
-- Engineering & Design 
-- Manufacting & Fabrication
-- Software Development (e.g. Python, C#, Powershell, VBA)
-- Process Development & Workflow Automation 
-- Networking & Self-Hosting -->
+This is my personal blog. A website where I showcase some of my projects and share information related to (but not limited to):
+- Engineering and Design
+- Manufacturing and Fabrication
+- Programming and Scripting
+- Networking and Self-Hosting
+
