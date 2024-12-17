@@ -14,11 +14,12 @@ Scoop out-of-the-box has default buckets installed. These buckets are publicly a
 ## Assumptions 
 This guide assumes the following: 
 - you already have [scoop package manager](https://scoop.sh/)  installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. 
-- you are familiar with how to use [PowerShell](https://learn.microsoft.com/en-us/powershell/). 
+- you are familiar basic usage of [PowerShell](https://learn.microsoft.com/en-us/powershell/). 
 
 ## Instructions 
+
 ### Creating a manifest. 
-Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest
+First thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest
 
 #### Option 1: Using `Scoop Create`
 
@@ -45,9 +46,8 @@ scoop create P:\\Software\\myapp.zip
 
 ### Creating a Bucket
 
-
-
-
 ### Registering the bucket with Scoop. 
 
 ### Installing app.exe
+
+### Advanced: Pre and Post Uninstall

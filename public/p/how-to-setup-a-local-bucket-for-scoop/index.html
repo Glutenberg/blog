@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar with how to use PowerShell. Instructions\rCreating a manifest.\rPut simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar basic usage of PowerShell. Instructions\rCreating a manifest.\rFirst thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest\n">
 <title>How to Setup a Local Bucket for Scoop</title>
 
 <link rel='canonical' href='http://localhost:1313/p/how-to-setup-a-local-bucket-for-scoop/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="How to Setup a Local Bucket for Scoop">
-<meta property='og:description' content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar with how to use PowerShell. Instructions\rCreating a manifest.\rPut simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest\n">
+<meta property='og:description' content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar basic usage of PowerShell. Instructions\rCreating a manifest.\rFirst thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest\n">
 <meta property='og:url' content='http://localhost:1313/p/how-to-setup-a-local-bucket-for-scoop/'>
 <meta property='og:site_name' content='Josh Coles, P.Eng'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='guide' /><meta property='article:published_time' content='2024-12-04T22:18:25-05:00'/><meta property='article:modified_time' content='2024-12-04T22:18:25-05:00'/>
 <meta name="twitter:title" content="How to Setup a Local Bucket for Scoop">
-<meta name="twitter:description" content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar with how to use PowerShell. Instructions\rCreating a manifest.\rPut simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest\n">
+<meta name="twitter:description" content="Introduction\rScoop out-of-the-box has default buckets installed. These buckets are publicly available on github and give users access to hundreds of precompiled, free software distributions.\nAssumptions\rThis guide assumes the following:\nyou already have scoop package manager installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation. you are familiar basic usage of PowerShell. Instructions\rCreating a manifest.\rFirst thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest\n">
     </head>
     <body class="
     article-page
@@ -305,6 +305,7 @@
         <li><a href="#creating-a-bucket">Creating a Bucket</a></li>
         <li><a href="#registering-the-bucket-with-scoop">Registering the bucket with Scoop.</a></li>
         <li><a href="#installing-appexe">Installing app.exe</a></li>
+        <li><a href="#advanced-pre-and-post-uninstall">Advanced: Pre and Post Uninstall</a></li>
       </ol>
     </li>
   </ol>
@@ -393,12 +394,12 @@
 <ul>
 <li>you already have <a class="link" href="https://scoop.sh/"  target="_blank" rel="noopener"
     >scoop package manager</a>  installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation.</li>
-<li>you are familiar with how to use <a class="link" href="https://learn.microsoft.com/en-us/powershell/"  target="_blank" rel="noopener"
+<li>you are familiar basic usage of <a class="link" href="https://learn.microsoft.com/en-us/powershell/"  target="_blank" rel="noopener"
     >PowerShell</a>.</li>
 </ul>
 <h2 id="instructions">Instructions
 </h2><h3 id="creating-a-manifest">Creating a manifest.
-</h3><p>Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest</p>
+</h3><p>First thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest</p>
 <h4 id="option-1-using-scoop-create">Option 1: Using <code>Scoop Create</code>
 </h4><p>Scoop has a built in tool called <code>create</code>. It will present a series of prompts and then generate a manifest for your application based on the given responses.</p>
 <div class="highlight"><div class="chroma">
@@ -439,6 +440,7 @@
 </div><h3 id="creating-a-bucket">Creating a Bucket
 </h3><h3 id="registering-the-bucket-with-scoop">Registering the bucket with Scoop.
 </h3><h3 id="installing-appexe">Installing app.exe
+</h3><h3 id="advanced-pre-and-post-uninstall">Advanced: Pre and Post Uninstall
 </h3>
 </section>
 

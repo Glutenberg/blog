@@ -39,12 +39,12 @@ This blog will primary focus on the following topics:
 &lt;ul&gt;
 &lt;li&gt;you already have &lt;a class=&#34;link&#34; href=&#34;https://scoop.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;scoop package manager&lt;/a&gt;  installed on your machine. If you have not yet done this please do so by following the installation instructions in the scoop documentation.&lt;/li&gt;
-&lt;li&gt;you are familiar with how to use &lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/en-us/powershell/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;you are familiar basic usage of &lt;a class=&#34;link&#34; href=&#34;https://learn.microsoft.com/en-us/powershell/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;PowerShell&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;instructions&#34;&gt;Instructions
 &lt;/h2&gt;&lt;h3 id=&#34;creating-a-manifest&#34;&gt;Creating a manifest.
-&lt;/h3&gt;&lt;p&gt;Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to get it and how to install it. There are 2 ways to create a manifest&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;First thing we need to do is create a manifest for our application. Put simply, a manifest is a file that contains information that tells scoop what is being installed, where to source it from and how to install it. There are 2 ways to create a manifest&lt;/p&gt;
 &lt;h4 id=&#34;option-1-using-scoop-create&#34;&gt;Option 1: Using &lt;code&gt;Scoop Create&lt;/code&gt;
 &lt;/h4&gt;&lt;p&gt;Scoop has a built in tool called &lt;code&gt;create&lt;/code&gt;. It will present a series of prompts and then generate a manifest for your application based on the given responses.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -85,6 +85,7 @@ This blog will primary focus on the following topics:
 &lt;/div&gt;&lt;h3 id=&#34;creating-a-bucket&#34;&gt;Creating a Bucket
 &lt;/h3&gt;&lt;h3 id=&#34;registering-the-bucket-with-scoop&#34;&gt;Registering the bucket with Scoop.
 &lt;/h3&gt;&lt;h3 id=&#34;installing-appexe&#34;&gt;Installing app.exe
+&lt;/h3&gt;&lt;h3 id=&#34;advanced-pre-and-post-uninstall&#34;&gt;Advanced: Pre and Post Uninstall
 &lt;/h3&gt;</description>
         </item>
         <item>
