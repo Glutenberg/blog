@@ -1,7 +1,7 @@
 ---
 title: How to Setup a Local Bucket for Scoop
 date: 2024-12-04T22:18:25-05:00
-draft:  false
+draft:  true
 categories: 
     - software
 tags:
