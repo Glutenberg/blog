@@ -1,4 +1,4 @@
-baseurl: https://example.com/
+baseurl: https://colescanada.com/
 languageCode: en-us
 theme: hugo-theme-stack
 title: Josh Coles, P.Eng
@@ -32,7 +32,7 @@ languages:
     zh-cn:
         languageName: 中文
         title: 乔什·科尔斯 P.Eng
-        weight: 2
+        weight: 3
         params:
             sidebar:
                 subtitle: 个人博客
