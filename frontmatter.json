@@ -3,11 +3,57 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "post",
-      "path": "[[workspace]]/content/post"
+      "path": "[[workspace]]/content/post/"
     }
   ],
   "frontMatter.content.publicFolder": "static",
   "frontMatter.framework.id": "hugo",
-  "frontMatter.git.enabled": false,
-  "frontMatter.preview.host": "http://localhost:1313"
+  "frontMatter.git.enabled": true,
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": true,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ]
 }
