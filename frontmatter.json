@@ -1,15 +1,16 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.git.enabled": false,
+  "frontMatter.file.preserveCasing": true,
+  "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
       "title": "post",
+      "filePrefix": "{{date|yyyy-MM-dd}}--",
       "path": "[[workspace]]/content/post/"
-    }
-  ],
-  "frontMatter.content.publicFolder": "static",
-  "frontMatter.framework.id": "hugo",
-  "frontMatter.git.enabled": true,
-  "frontMatter.preview.host": "http://localhost:1313",
+    }],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
