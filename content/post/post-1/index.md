@@ -1,7 +1,7 @@
 ---
 title: Creating Local Buckets for Scoop
 date: 2024-12-04T22:18:25-05:00
-draft: true
+draft: false
 categories:
   - software
 tags:
