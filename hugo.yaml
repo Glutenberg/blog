@@ -87,8 +87,8 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
-
+        provider: cactus
+        
         disqusjs:
             shortname:
             apiUrl:
@@ -188,7 +188,7 @@ params:
             params:
                 limit: 10
         page:
-          - type: toc
+         - type: toc
 
     opengraph:
         twitter:

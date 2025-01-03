@@ -1,14 +1,15 @@
 ---
 title: Creating Local Buckets for Scoop
-description: "This guide covers how to create a local repositories for scoop. That is, manifests and packages stored and accessable on network attached drives."
+description: This guide covers how to create a local repositories for scoop. That is, manifests and packages stored and accessable on network attached drives.
 date: 2024-12-04T22:18:25-05:00
 draft: false
 categories:
-  - software
+  - Software
 tags:
   - guide
 image: Screenshot 2024-12-19 215642.png
----    
+---
+    
 
 > This guide covers how to create a local repositories for scoop. That is, manifests and packages stored and accessable on network attached drives. 
 
